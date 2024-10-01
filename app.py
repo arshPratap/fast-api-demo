@@ -6,16 +6,6 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
-origins = ["*"]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 @app.get("/")
 async def greet():
     return {"message":"Welcome"}
@@ -26,4 +16,4 @@ async def greet():
 
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host='0.0.0.0',port=9999)
+    uvicorn.run("app:app", host='0.0.0.0',port=8080)
