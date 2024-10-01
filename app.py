@@ -16,6 +16,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def greet():
+    return {"message":"Welcome"}
+
 @app.get("/api/openshift/welcome")
 async def greet():
     return {"message":"Welcome to Openshift Result"}

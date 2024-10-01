@@ -1,0 +1,10 @@
+dynaconf==3.2.4
+fastapi==0.108.0
+numpy==1.26.3
+pyarrow
+pydantic==2.5.3
+typesense==0.18.0
+uvicorn==0.25.0
+python-dotenv==1.0.1
+requests
+pytest
